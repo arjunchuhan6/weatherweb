@@ -15,30 +15,29 @@
     </header>
     <main class="container py-8 flex flex-col lg:flex-row gap-8 px-8 text-white">
       <!-- Create a search section -->
-        <section class="inputCity lg:w-[30%] xl-w-[30%] ">
+        <section class="City lg:w-[30%] xl-w-[30%] ">
             <h3 class="font-bold text-xl">Enter a City Name</h3>
-            <input type="text" placeholder="New Delhi, Kolkata, Goa" class="px-4 py-2 my-2 block w-full text-black rounded-full" required value="New Delhi">
-            <button id="search" class="btn w-full bg-blue-800 text-white font-bold px-4 py-2 rounded-full">
+            <input id="inputcity" type="text" placeholder="New Delhi, Kolkata, Goa" class="px-4 py-2 my-2 block w-full text-black rounded-full" required value="Delhi">
+            <button id="searchbtn" class="btn w-full bg-blue-800 text-white font-bold px-4 py-2 rounded-full">
                 Search</button>
             <h3 class="my-2 text-center text-xl">OR</h3>
-            <button id="locationbtn" class="btn w-full bg-blue-700 px-4 py-2 rounded-full            ">Use Current Location<button>
+            <button id="locationbtn" class="btn w-full bg-blue-700 px-4 py-2 rounded-full ">Use Current Location<button>
         </section>
         <!-- Data that will Display -->
         <section class="inCity lg:w-[60%] xl:w-full">
-            <div
-              class="presentCity backdrop-blur-sm bg-slate-400 w-full flex-col-reverse sm:flex-row flex justify-between p-4 my-4 rounded-lg">
+            <div class="presentCity backdrop-blur-sm bg-slate-400 w-full flex-col-reverse sm:flex-row flex justify-between p-4 my-4 rounded-lg">
               <div class="data text-xl">
                 <h3 class="text-2xl font-bold">
-                  <span id="City">Delhi</span>
-                  (<span id="date">2024-07-20</span>)
+                  <span id="city">Delhi</span>
+                  (<span id="date">20-07-2024</span>)
                 </h3>
-                <p>Temperature: <span id="Temp">7.06°C</span></p>
-                <p>Wind: <span id="Wind">2.85 M/S</span></p>
-                <p>Humidity: <span id="Humidity"> 88</span>%</p>
+                <p>Temperature: <span id="temp">7.06°C</span></p>
+                <p>Wind: <span id="wind">2.85 M/S</span></p>
+                <p>Humidity: <span id="humidity"> 88</span>%</p>
               </div>
               <div class="icon">
-                <img id="Img" src="https://th.bing.com/th/id/OIP.kz4duRxmJR3dqi7jHyzpiAHaE6?rs=1&pid=ImgDetMain" width="100px" alt=""/>
-                <p id="Feels">Light Rain</p>
+                <img id="image" src="https://openweathermap.org/img/wn/10d@4x.png" width="100px" alt=""/>
+                <p id="feels">Light Rain</p>
               </div>
             </div>
             <!-- Next 5 days forecast -->
@@ -46,53 +45,40 @@
               <h2 class="text-3xl py-4 font-bold">More 5-Day Forecast</h2>
               <div class="cards justify-start xl:justify-between py-6 flex flex-wrap xl:flex-nowrap lg:flex-row gap-4">
                 <div class="card w-full xs:w-[13rem] p-4 backdrop-blur-sm bg-slate-400 rounded-lg transition-all">
-                  <h3>2024-04-24</h3>
-                  <img src="https://th.bing.com/th/id/OIP.kz4duRxmJR3dqi7jHyzpiAHaE6?rs=1&pid=ImgDetMain" width="100px" alt=""/>
+                  <h3>20-07-2024</h3>
+                  <img src="https://openweathermap.org/img/wn/10d@4x.png" width="100px" alt=""/>
                   <p>Temperature: 7.06°C</p>
                   <p>Wind: 2.85 M/S</p>
                   <p>Humidity: 88%</p>
                 </div>
                 <div style="box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8)" class="card w-full xs:w-[13rem] p-4 backdrop-blur-sm bg-slate-400 transition-all rounded-lg">
-                  <h3>2024-04-24</h3>
+                  <h3>20-07-2024</h3>
                   <img
-                    src="https://th.bing.com/th/id/OIP.kz4duRxmJR3dqi7jHyzpiAHaE6?rs=1&pid=ImgDetMain" width="100px"
-                    alt=""/>
+                    src="https://openweathermap.org/img/wn/10d@4x.png" width="100px" alt=""/>
                   <p>Temperature: 7.06°C</p>
                   <p>Wind: 2.85 M/S</p>
                   <p>Humidity: 88%</p>
                 </div>
     
                 <div style="box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8)" class="card w-full xs:w-[13rem] p-4 backdrop-blur-sm bg-slate-400 rounded-lg transition-all">
-                  <h3>2024-04-24</h3>
-                  <img
-                    src="https://th.bing.com/th/id/OIP.kz4duRxmJR3dqi7jHyzpiAHaE6?rs=1&pid=ImgDetMain"
-                    width="100px"
-                    alt=""
-                  />
+                  <h3>20-07-2024</h3>
+                  <img src="https://openweathermap.org/img/wn/10d@4x.png" width="100px" alt=""/>
                   <p>Temperature: 7.06°C</p>
                   <p>Wind: 2.85 M/S</p>
                   <p>Humidity: 88%</p>
                 </div>
     
                 <div style="box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8)" class="card w-full xs:w-[13rem] p-4 backdrop-blur-sm bg-slate-400 rounded-lg transition-all">
-                  <h3>2024-04-24</h3>
-                  <img
-                    src="https://th.bing.com/th/id/OIP.kz4duRxmJR3dqi7jHyzpiAHaE6?rs=1&pid=ImgDetMain"
-                    width="100px"
-                    alt=""
-                  />
+                  <h3>20-07-2024</h3>
+                  <img src="https://openweathermap.org/img/wn/10d@4x.png" width="100px" alt=""/>
                   <p>Temperature: 7.06°C</p>
                   <p>Wind: 2.85 M/S</p>
                   <p>Humidity: 88%</p>
                 </div>
     
                 <div style="box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8)" class="card w-full xs:w-[13rem] p-4 backdrop-blur-sm bg-slate-400 rounded-lg transition-all">
-                  <h3>2024-04-24</h3>
-                  <img
-                    src="https://th.bing.com/th/id/OIP.kz4duRxmJR3dqi7jHyzpiAHaE6?rs=1&pid=ImgDetMain"
-                    width="100px"
-                    alt=""
-                  />
+                  <h3>20-07-2024</h3>
+                  <img src="https://openweathermap.org/img/wn/10d@4x.png" width="100px" alt=""/>
                   <p>Temperature: 7.06°C</p>
                   <p>Wind: 2.85 M/S</p>
                   <p>Humidity: 88%</p>
